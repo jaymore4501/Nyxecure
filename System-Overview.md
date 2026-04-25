@@ -1,12 +1,12 @@
-# System Overview: Nyxsecure
+# System Overview: Nyxecure
 
 ## Project Title
-**Nyxsecure: An Advanced Phishing Detection and Password Diagnostics Platform**
+**Nyxecure: An Advanced Phishing Detection and Password Diagnostics Platform**
 
 ---
 
 ## Introduction
-With the rapid integration of digital platforms into daily life, cyber threats have evolved into sophisticated and multifaceted dangers. Among these, phishing attacks and compromised credentials remain the most prominent vectors for data breaches. **Nyxsecure** is an intelligent, full-stack cybersecurity application designed to empower everyday users and organizations by providing immediate, accessible, and deep analysis of digital security hygiene. Built with a sleek, modern, and highly intuitive interface, the system acts as a frontline defense against deceptive URLs and weak passwords.
+With the rapid integration of digital platforms into daily life, cyber threats have evolved into sophisticated and multifaceted dangers. Among these, phishing attacks and compromised credentials remain the most prominent vectors for data breaches. **Nyxecure** is an intelligent, full-stack cybersecurity application designed to empower everyday users and organizations by providing immediate, accessible, and deep analysis of digital security hygiene. Built with a sleek, modern, and highly intuitive interface, the system acts as a frontline defense against deceptive URLs and weak passwords.
 
 ---
 
@@ -24,12 +24,12 @@ Despite numerous awareness campaigns, users continuously fall victim to deceptiv
 ---
 
 ## Scope of the Project
-The scope of Nyxsecure encompasses the development of a web-based application focused on two primary pillars: **Phishing URL Detection** and **Password Analysis**. The system handles real-time user inputs, processes the data through custom backend heuristics and industry-standard algorithms, and visualizes the risk scores instantly. The scope extends to maintaining a statistical dashboard of historical scans but strictly excludes the storage or transmission of plaintext user passwords. 
+The scope of Nyxecure encompasses the development of a web-based application focused on two primary pillars: **Phishing URL Detection** and **Password Analysis**. The system handles real-time user inputs, processes the data through custom backend heuristics and industry-standard algorithms, and visualizes the risk scores instantly. The scope extends to maintaining a statistical dashboard of historical scans but strictly excludes the storage or transmission of plaintext user passwords. 
 
 ---
 
 ## System Overview
-Nyxsecure operates on a decoupled client-server architecture. The frontend provides a seamless, glassmorphism-themed interface where users can submit data. The backend, built securely with Node.js and Express, acts as the computation engine. It receives the payloads, runs the specialized algorithms to determine the risk matrix, and securely logs the metadata to a MongoDB database for overarching statistical tracking.
+Nyxecure operates on a decoupled client-server architecture. The frontend provides a seamless, glassmorphism-themed interface where users can submit data. The backend, built securely with Node.js and Express, acts as the computation engine. It receives the payloads, runs the specialized algorithms to determine the risk matrix, and securely logs the metadata to a MongoDB database for overarching statistical tracking.
 
 ---
 
@@ -42,7 +42,7 @@ The system is divided into three main operational environments:
 ---
 
 ## System Architecture
-Nyxsecure leverages a standard **MERN (MongoDB, Express, React, Node.js)** stack architecture:
+Nyxecure leverages a standard **MERN (MongoDB, Express, React, Node.js)** stack architecture:
 - **Presentation Layer:** React (Vite), Tailwind CSS, Chart.js.
 - **Application Layer:** Express.js routing, `zxcvbn` password computing, custom URL heuristics engine.
 - **Persistence Layer:** MongoDB (Mongoose Schema) storing anonymized scan statistics and metadata.
@@ -138,9 +138,9 @@ The system performs exceptionally well under standard loads. The Vite frontend c
 ---
 
 ## Future Scope
-Future iterations of Nyxsecure could integrate live API calls to Google Web Risk or VirusTotal for secondary validation. Additionally, machine learning models (like NLP classifiers) could be implemented to analyze the actual HTML content of the scanned URL, rather than just the URL string itself. A browser extension could also be developed to automate these checks silently as users browse the web.
+Future iterations of Nyxecure could integrate live API calls to Google Web Risk or VirusTotal for secondary validation. Additionally, machine learning models (like NLP classifiers) could be implemented to analyze the actual HTML content of the scanned URL, rather than just the URL string itself. A browser extension could also be developed to automate these checks silently as users browse the web.
 
 ---
 
 ## Conclusion
-Nyxsecure successfully bridges the gap between complex cybersecurity algorithms and everyday user accessibility. By packaging advanced heuristic analysis and industry-grade password strength calculations into a fluid, aesthetically premium web application, it serves as a highly effective educational and defensive tool. The project demonstrates the power of the MERN stack in building secure, scalable, and impactful software solutions.
+Nyxecure successfully bridges the gap between complex cybersecurity algorithms and everyday user accessibility. By packaging advanced heuristic analysis and industry-grade password strength calculations into a fluid, aesthetically premium web application, it serves as a highly effective educational and defensive tool. The project demonstrates the power of the MERN stack in building secure, scalable, and impactful software solutions.

@@ -10,7 +10,7 @@ This document outlines the architecture and implementation steps for building th
 
 ## Proposed Architecture
 
-The project will be split into a `/client` and `/server` directory under the root `Nyxsecure` workspace.
+The project will be split into a `/client` and `/server` directory under the root `Nyxecure` workspace.
 
 ### Backend Structure (`/server`)
 - **Tech Stack**: Node.js, Express.js, MongoDB (Mongoose), `zxcvbn`, `axios`, `express-rate-limit`.

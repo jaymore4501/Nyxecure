@@ -1,0 +1,36 @@
+_id,type,input,score,result,details.reasons[0],details.reasons[1],details.reasons[2],createdAt,__v,details.crackTime
+69eb79e1c5edbb0592dc709c,url,http://secure-bank-update.net,90,Dangerous,Missing HTTPS (encryption),Contains 3 suspicious keyword(s),,2026-04-24T14:10:41.747Z,0,
+69eb7a0cc5edbb0592dc709d,url,http://bank-login-alert.org,70,Suspicious,Missing HTTPS (encryption),Contains 2 suspicious keyword(s),,2026-04-24T14:11:24.734Z,0,
+69eb7a1fc5edbb0592dc709f,url,http://bank-login-alert.org,70,Suspicious,Missing HTTPS (encryption),Contains 2 suspicious keyword(s),,2026-04-24T14:11:43.743Z,0,
+69eb7a33c5edbb0592dc70a0,url,https://www.google.com,0,Safe,No immediate surface threats detected.,,,2026-04-24T14:12:03.707Z,0,
+69eb7a4ec5edbb0592dc70a1,url,https://www.geeksforgeeks.org,0,Safe,No immediate surface threats detected.,,,2026-04-24T14:12:30.431Z,0,
+69eb7a76c5edbb0592dc70a2,password,********,0,Very Weak,,,,2026-04-24T14:13:10.279Z,0,less than a second
+69eb7a82c5edbb0592dc70a3,password,********,1,Weak,,,,2026-04-24T14:13:22.688Z,0,2 seconds
+69eb7a85c5edbb0592dc70a4,password,********,0,Very Weak,,,,2026-04-24T14:13:25.186Z,0,less than a second
+69eb7a97c5edbb0592dc70a5,password,*********,3,Strong,,,,2026-04-24T14:13:43.802Z,0,3 hours
+69eb7a9cc5edbb0592dc70a6,password,****,0,Very Weak,,,,2026-04-24T14:13:48.311Z,0,less than a second
+69eb7a9fc5edbb0592dc70a7,password,****,0,Very Weak,,,,2026-04-24T14:13:51.322Z,0,less than a second
+69eb7aa0c5edbb0592dc70a8,password,********,1,Weak,,,,2026-04-24T14:13:52.944Z,0,1 minute
+69eb7ab9c5edbb0592dc70a9,password,********,0,Very Weak,,,,2026-04-24T14:14:17.518Z,0,less than a second
+69eb7acdc5edbb0592dc70aa,password,*************,4,Very Strong,,,,2026-04-24T14:14:37.435Z,0,31 years
+69eb7c5cc5edbb0592dc70ab,url,http://bank-login-alert.org/,70,Suspicious,Missing HTTPS (encryption),Contains 2 suspicious keyword(s),,2026-04-24T14:21:16.687Z,0,
+69eb7c79c5edbb0592dc70ac,url,http://secure-bank-update.example.net,90,Dangerous,Missing HTTPS (encryption),Contains 3 suspicious keyword(s),,2026-04-24T14:21:45.784Z,0,
+69eb7c8ac5edbb0592dc70ad,url,https://www.google.com,0,Safe,No immediate surface threats detected.,,,2026-04-24T14:22:02.509Z,0,
+69eb7ca6c5edbb0592dc70ae,password,********,0,Very Weak,,,,2026-04-24T14:22:30.074Z,0,less than a second
+69eb7cafc5edbb0592dc70af,password,********,0,Very Weak,,,,2026-04-24T14:22:39.641Z,0,less than a second
+69eb7cc8c5edbb0592dc70b0,password,*********,2,Medium,,,,2026-04-24T14:23:04.275Z,0,17 minutes
+69eb7cd4c5edbb0592dc70b1,password,*************,4,Very Strong,,,,2026-04-24T14:23:16.897Z,0,31 years
+69eb7d9ac5edbb0592dc70b2,url,http://secure.login.bank.com.site.com/,100,Dangerous,Missing HTTPS (encryption),Contains 3 suspicious keyword(s),Unusual number of subdomains (dots),2026-04-24T14:26:34.901Z,0,
+69eb7dddc5edbb0592dc70b3,url,http://login-paypal.example.com,50,Suspicious,Missing HTTPS (encryption),Contains 1 suspicious keyword(s),,2026-04-24T14:27:41.954Z,0,
+69eb7df5c5edbb0592dc70b4,url,https://www.google.com,0,Safe,No immediate surface threats detected.,,,2026-04-24T14:28:05.939Z,0,
+69eb7e09c5edbb0592dc70b5,url,https://www.geeksforgeeks.org,0,Safe,No immediate surface threats detected.,,,2026-04-24T14:28:25.396Z,0,
+69eb7e1ac5edbb0592dc70b6,password,********,0,Very Weak,,,,2026-04-24T14:28:42.671Z,0,less than a second
+69eb7e27c5edbb0592dc70b7,password,*********,2,Medium,,,,2026-04-24T14:28:55.838Z,0,17 minutes
+69eb7e33c5edbb0592dc70b8,password,*************,4,Very Strong,,,,2026-04-24T14:29:07.388Z,0,31 years
+69eb7ed7c5edbb0592dc70b9,url,http://login-paypal.example.com,50,Suspicious,Missing HTTPS (encryption),Contains 1 suspicious keyword(s),,2026-04-24T14:31:51.857Z,0,
+69eb7eeec5edbb0592dc70ba,url,secure.login.bank.com.site.com,100,Dangerous,Missing HTTPS (encryption),Contains 3 suspicious keyword(s),Unusual number of subdomains (dots),2026-04-24T14:32:14.413Z,0,
+69eb7efec5edbb0592dc70bb,url,https://www.google.com,0,Safe,No immediate surface threats detected.,,,2026-04-24T14:32:30.855Z,0,
+69eb7f09c5edbb0592dc70bc,url,https://www.geeksforgeeks.org,0,Safe,No immediate surface threats detected.,,,2026-04-24T14:32:41.461Z,0,
+69eb7f1fc5edbb0592dc70bd,password,********,0,Very Weak,,,,2026-04-24T14:33:03.074Z,0,less than a second
+69eb7f2ac5edbb0592dc70be,password,*********,2,Medium,,,,2026-04-24T14:33:14.733Z,0,17 minutes
+69eb7f37c5edbb0592dc70bf,password,*************,4,Very Strong,,,,2026-04-24T14:33:27.107Z,0,31 years

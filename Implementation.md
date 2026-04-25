@@ -6,7 +6,7 @@ This guide will walk you step-by-step through uploading your full-stack applicat
 
 ## 🛠️ Phase 1: Upload to GitHub
 
-Since both the `client` and `server` are in the same folder, we will initialize Git in the **root** folder (`Nyxsecure`) so everything goes into one repository.
+Since both the `client` and `server` are in the same folder, we will initialize Git in the **root** folder (`Nyxecure`) so everything goes into one repository.
 
 ### 0. Install Git (Important)
 Your system currently does not have Git installed. 
@@ -20,9 +20,9 @@ I have already created a `.gitignore` file in your root folder for you. It ensur
 *(If you ever need to recreate it, just make sure it contains `node_modules/`, `.env`, and `client/dist/`)*.
 
 ### 2. Initialize and Push to GitHub
-Open your terminal in the **root** folder (`c:\Users\jaymo\Downloads\Projects 2026\Nyxsecure`) and run the following exact commands:
+Open your terminal in the **root** folder (`d:\your-path\Projects\Nyxecure`) and run the following exact commands:
 
-\`\`\`bash
+```bash
 # 1. Initialize git in the root folder
 git init
 
@@ -42,15 +42,15 @@ git remote add origin https://github.com/your-username/nyxecure.git
 # 6. Push the code to GitHub
 git branch -M main
 git push -u origin main
-\`\`\`
+```
 
 ### 3. Pushing Future Updates
 Whenever you make changes to your code in the future, simply run:
-\`\`\`bash
+```bash
 git add .
 git commit -m "Describe what you changed"
 git push
-\`\`\`
+```
 
 ---
 
@@ -104,3 +104,4 @@ Because of security rules (CORS), your backend needs to explicitly allow request
 5. Save changes (Render will automatically redeploy the backend).
 
 🎉 **Congratulations! Your full-stack cybersecurity application is now completely live and accessible to the world!**
+
