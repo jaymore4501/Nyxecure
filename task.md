@@ -1,0 +1,20 @@
+- `[x]` Phase 1: Environment & Setup
+  - `[x]` Initialize Vite React app in `/client`
+  - `[x]` Initialize Node Express app in `/server`
+  - `[x]` Install dependencies for `client` and `server`
+  - `[x]` Configure Tailwind, shadcn, and Framer Motion
+- `[x]` Phase 2: Backend Development
+  - `[x]` Set up Express server with middlewares
+  - `[x]` Implement Phishing detection API
+  - `[x]` Implement Password Analyzer API
+  - `[x]` Implement Dashboard Stats API
+- `[x]` Phase 3: Frontend Core & Components
+  - `[x]` Build layout and routing
+  - `[x]` Build Navbar (glass effect)
+  - `[x]` Integrate `DecryptedText` component
+- `[x]` Phase 4: Frontend Pages
+  - `[x]` Build Landing Page
+  - `[x]` Build URL Scanner Page
+  - `[x]` Build Password Analyzer Page
+  - `[x]` Build Dashboard Page
+- `[x]` Phase 5: Polish & Refinement

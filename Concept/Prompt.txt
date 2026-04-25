@@ -1,0 +1,383 @@
+Build a full-stack production-ready web application named "Nyxecure".
+
+---
+
+## 🛡️ PROJECT OVERVIEW
+
+Nyxecure is a cybersecurity platform that combines:
+
+1. Phishing URL Detection (AI + heuristics)
+2. Password Strength Analyzer (real-time + crack simulation)
+
+The application must feel like a modern SaaS cybersecurity dashboard, not a student project.
+
+---
+
+## ⚙️ TECH STACK (STRICT REQUIREMENTS)
+
+Frontend:
+
+* React.js (Vite)
+* Tailwind CSS
+* shadcn/ui components
+* ReactBits components (for text effects)
+* Framer Motion (for animations)
+
+Backend:
+
+* Node.js
+* Express.js
+
+Database:
+
+* MongoDB (store scan history)
+
+Libraries:
+
+* zxcvbn (password strength)
+* axios (API calls)
+* express-rate-limit (security)
+* validator (input validation)
+
+---
+
+## 🎨 UI / UX DESIGN REQUIREMENTS
+
+Theme:
+
+* Dark mode only
+* Background: #0f172a
+* Accent colors:
+
+  * Neon Blue: #3b82f6
+  * Neon Purple: #8b5cf6
+
+Style:
+
+* Glassmorphism UI (IMPORTANT)
+  Use:
+  bg-white/10 backdrop-blur-lg border border-white/20 shadow-xl rounded-2xl
+
+* Fully responsive (mobile-first)
+
+* Clean SaaS layout
+
+---
+
+## 🧊 NAVBAR (GLASS EFFECT)
+
+* Sticky top navbar
+* Transparent glass effect with blur
+* Logo: "Nyxecure"
+* Navigation:
+
+  * Home
+  * Features
+  * Dashboard
+* CTA button: "Scan Now"
+
+---
+
+## ✨ TEXT EFFECTS (STRICT RULE)
+
+Install:
+npx shadcn@latest add @react-bits/DecryptedText-JS-CSS
+
+Use DecryptedText ONLY for:
+
+* Hero tagline
+* Section headers
+
+Do NOT overuse animations.
+
+---
+
+## 🏠 LANDING PAGE
+
+Hero Section:
+
+* Title: "Nyxecure"
+* Subtitle (DecryptedText):
+  "Detect Threats. Strengthen Security."
+* Buttons:
+
+  * Scan URL
+  * Check Password
+
+Sections:
+
+1. Features (glass cards)
+
+   * Phishing Detection
+   * Password Analyzer
+
+2. How It Works (3 steps)
+
+3. CTA Section
+
+---
+
+## 🌐 PHISHING URL DETECTOR
+
+Frontend:
+
+* Input field for URL
+* Button: "Analyze URL"
+
+Backend logic:
+
+* Check HTTPS presence
+* Detect suspicious keywords:
+  ["login", "verify", "bank", "secure"]
+* Count dots and URL length
+* Optional: Google Safe Browsing API integration
+
+Output:
+
+* Status:
+
+  * Safe (green)
+  * Suspicious (yellow)
+  * Dangerous (red)
+* Risk score (0–100)
+* Explanation list
+
+---
+
+## 🔐 PASSWORD STRENGTH ANALYZER
+
+Frontend:
+
+* Password input with toggle visibility
+* Real-time strength meter
+
+Backend:
+
+* Use zxcvbn
+
+Output:
+
+* Strength: Weak / Medium / Strong
+* Score (0–4)
+* Crack time estimate
+* Suggestions for improvement
+
+---
+
+## 📊 DASHBOARD PAGE
+
+Features:
+
+* Recent scans (URLs + password checks)
+* Stats:
+
+  * Total scans
+  * Threats detected
+* Graphs (Chart.js)
+
+---
+
+## 🔐 SECURITY REQUIREMENTS
+
+* Input sanitization (prevent XSS)
+* Rate limiting on API routes
+* Do NOT store passwords
+* Use environment variables (.env)
+
+---
+
+## 📁 PROJECT STRUCTURE
+
+/client
+/components
+/pages
+/ui
+App.jsx
+
+/server
+/routes
+/controllers
+/utils
+server.js
+
+---
+
+## ⚡ EXTRA FEATURES (IMPLEMENT IF POSSIBLE)
+
+* Copy result button
+* Download report (PDF)
+* Smooth animations (Framer Motion)
+* Loading states (spinners/skeletons)
+
+---
+
+## 🚀 DEPLOYMENT
+
+Frontend: Vercel
+Backend: Render or Railway
+
+---
+
+## 📦 OUTPUT REQUIREMENTS
+
+Generate:
+
+1. Full frontend code (React + Tailwind + glass UI)
+2. Full backend code (Express APIs)
+3. API integration or mock implementation
+4. Proper comments explaining logic
+5. Setup instructions:
+
+   * npm install
+   * run commands
+
+---
+
+## 🎯 FINAL GOAL
+
+The application must look and behave like a real cybersecurity SaaS product, not a basic college project.
+
+Now refine and enhance the Nyxecure project with the following strict requirements:
+
+---
+
+## 🎯 CODE QUALITY & ARCHITECTURE
+
+* Use clean modular architecture
+* Separate concerns:
+
+  * UI components
+  * Business logic
+  * API services
+* Use reusable React components
+* Follow consistent naming conventions
+
+---
+
+## 🎨 UI POLISH (VERY IMPORTANT)
+
+* Use glassmorphism consistently for:
+
+  * Cards
+  * Navbar
+  * Modals
+
+* Add smooth hover effects:
+
+  * Slight scale (hover:scale-105)
+  * Glow effect for buttons
+
+* Add transitions:
+
+  * transition-all duration-300
+
+* Maintain spacing:
+
+  * Use Tailwind spacing system (p-6, gap-6)
+
+---
+
+## 📱 RESPONSIVENESS
+
+* Mobile-first design
+* Stack elements on small screens
+* Ensure:
+
+  * Navbar collapses into menu
+  * Buttons are full-width on mobile
+  * Text scales properly
+
+---
+
+## ⚡ USER EXPERIENCE (UX)
+
+* Add loading states:
+
+  * Spinner when analyzing URL/password
+
+* Add feedback:
+
+  * Toast notifications for results
+
+* Add input validation messages:
+
+  * Invalid URL warning
+  * Empty password warning
+
+---
+
+## 🌐 PHISHING DETECTION IMPROVEMENT
+
+Enhance logic by:
+
+* Assigning weighted scores:
+
+  * No HTTPS → +30 risk
+  * Suspicious keywords → +20
+  * Too many dots → +15
+  * Long URL → +10
+
+* Final score determines:
+
+  * 0–30 → Safe
+  * 31–70 → Suspicious
+  * 71–100 → Dangerous
+
+---
+
+## 🔐 PASSWORD ANALYZER IMPROVEMENT
+
+* Display strength visually:
+
+  * Progress bar (color-coded)
+
+* Show:
+
+  * Crack time (formatted)
+  * Feedback suggestions clearly
+
+---
+
+## 📊 DASHBOARD ENHANCEMENT
+
+* Add charts:
+
+  * Line chart → scans over time
+  * Pie chart → safe vs dangerous
+
+* Use dummy/mock data if DB is empty
+
+---
+
+## 🧠 PERFORMANCE
+
+* Lazy load pages
+* Optimize API calls
+* Avoid unnecessary re-renders
+
+---
+
+## 🔐 SECURITY BEST PRACTICES
+
+* Sanitize all inputs
+* Use rate limiting middleware
+* Hide sensitive data using .env
+* Prevent direct API misuse
+
+---
+
+## 🎯 FINAL OUTPUT EXPECTATION
+
+The final application should:
+
+* Look like a premium SaaS cybersecurity product
+* Be clean, fast, and responsive
+* Have realistic functionality (not dummy UI only)
+* Be ready to demo in a final year project presentation
+
+---
+
+IMPORTANT:
+Do not generate placeholder UI.
+Do not skip backend logic.
+Do not simplify core features.
