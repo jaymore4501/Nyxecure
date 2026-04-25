@@ -30,8 +30,10 @@ Nyxecure runs on a fast, decoupled client-server architecture:
 ## 📂 Folder Structure
 ```
 Nyxecure/
+├── Concept/                # UI/UX Overviews and Prompts
 ├── client/                 # React Frontend (Vite)
 │   ├── public/             # Static assets
+│   │   └── Snapshots and Demonstration Video/ # Screenshots and demos
 │   ├── src/
 │   │   ├── components/     # Reusable UI components
 │   │   ├── lib/            # Utilities (Axios, etc.)
@@ -46,6 +48,7 @@ Nyxecure/
 │   ├── routes/             # API Endpoints
 │   ├── utils/              # Helper functions (Heuristics)
 │   └── server.js           # Server entry point
+├── Implementation.md       # Implementation Details
 ├── LICENSE.md              # Project License
 ├── System-Overview.md      # System Design Document
 └── README.md               # Project Documentation
