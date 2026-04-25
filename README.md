@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="client/public/Logo.png" alt="Nyxecure Logo" width="200" />
+  <img src="client/public/Logo.png" alt="Nyxecure Logo" width="50" />
 </div>
 
 # 🛡️ Nyxecure
@@ -7,7 +7,7 @@
 ## 📝 Short Project Description
 Nyxecure is a modern, lightweight cybersecurity web application built to help users identify deceptive links and create uncrackable passwords. It provides a simple, clean interface where anyone can quickly check if a URL is a phishing attempt or test how long it would take a hacker to crack their password. 
 
-![Project Preview](client/public/Project_Image%202.png)
+![Project Preview](client/public/Project_Image 2.png.png)
 
 ## ✨ Key Features
 - **Phishing URL Detection 🎣:** Instantly flags deceptive links as Safe, Suspicious, or Dangerous.
