@@ -7,7 +7,7 @@
 ## 📝 Short Project Description
 Nyxecure is a modern, lightweight cybersecurity web application built to help users identify deceptive links and create uncrackable passwords. It provides a simple, clean interface where anyone can quickly check if a URL is a phishing attempt or test how long it would take a hacker to crack their password. 
 
-![Project Preview](client/public/Project_Image 2.png.png)
+![Project Preview](client/public/Project_Image%202.png)
 
 ## ✨ Key Features
 - **Phishing URL Detection 🎣:** Instantly flags deceptive links as Safe, Suspicious, or Dangerous.
@@ -46,7 +46,6 @@ Nyxecure/
 │   ├── routes/             # API Endpoints
 │   ├── utils/              # Helper functions (Heuristics)
 │   └── server.js           # Server entry point
-├── Snapshots and Demonstration Video/ # Project screenshots and demo videos
 ├── LICENSE.md              # Project License
 ├── System-Overview.md      # System Design Document
 └── README.md               # Project Documentation
@@ -130,9 +129,6 @@ Simply open your browser and navigate to `http://localhost:5173/` 🌐 to use th
 
 ## 📊 Results Summary
 During testing, the system successfully and accurately flagged all standard Safe URLs from major organizations ✅. It effectively caught deceptive patterns in Suspicious and Dangerous URLs based on HTTPS absence, excessive subdomains, and manipulative keywords 🚨. Similarly, the password analyzer instantly recognized common dictionary passwords as "Very Weak", while appropriately rewarding complex, high-entropy strings with "Strong" ratings and vast crack-time estimations 🛡️.
-
-### 🗄️ Database Export
-To verify the backend logging, a file named **`nyxecure.scans.csv`** has been included in the project. This file was directly exported from **MongoDB Compass** and contains the actual scan results and metadata stored in the database.
 
 ## 🔐 Security Concepts Used
 - **Heuristics Analysis 🧩:** Using rule-based pattern matching to flag malicious URL intent.
