@@ -1,5 +1,5 @@
-<div align="center">
-  <img src="client/public/Logo.png" alt="Nyxecure Logo" width="50" />
+<div align="Left">
+  <img src="client/public/Logo.png" alt="Nyxecure Logo" width="50"/><span>Nyxecure</span>
 </div>
 
 # 🛡️ Nyxecure

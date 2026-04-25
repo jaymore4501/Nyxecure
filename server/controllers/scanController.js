@@ -9,19 +9,15 @@ export const analyzeUrl = async (req, res) => {
 
     const result = analyzePhishingUrl(url);
 
-    // Try to log asynchronously 
-    try {
-      const scanDoc = new Scan({
-        type: 'url',
-        input: url,
-        score: result.score,
-        result: result.status,
-        details: { reasons: result.reasons }
-      });
-      await scanDoc.save();
-    } catch (_) {
-      // Ignore db errors if db not connected
-    }
+    // Log asynchronously (without await) to make the API response instant
+    const scanDoc = new Scan({
+      type: 'url',
+      input: url,
+      score: result.score,
+      result: result.status,
+      details: { reasons: result.reasons }
+    });
+    scanDoc.save().catch(err => console.error('Silent DB log fail:', err.message));
 
     return res.json(result);
   } catch (err) {
@@ -49,18 +45,15 @@ export const analyzePassword = async (req, res) => {
       feedback: result.feedback
     };
 
-    // Try DB log
-    try {
-      // Store masked password in log: e.g., ****
-      const scanDoc = new Scan({
-        type: 'password',
-        input: '*'.repeat(password.length),
-        score: result.score,
-        result: strength,
-        details: { crackTime }
-      });
-      await scanDoc.save();
-    } catch (_) {}
+    // Log asynchronously (without await) to make the API response instant
+    const scanDoc = new Scan({
+      type: 'password',
+      input: '*'.repeat(password.length),
+      score: result.score,
+      result: strength,
+      details: { crackTime }
+    });
+    scanDoc.save().catch(err => console.error('Silent DB log fail:', err.message));
 
     return res.json(payload);
   } catch (err) {
@@ -88,10 +81,10 @@ export const getStats = async (req, res) => {
       recentScans: { urls: urlScans, passwords: passScans }
     });
   } catch (err) {
-    // Return mock data if db fails easily
+    // Return minimal mock data if db fails easily
     return res.json({
-      totalScans: 12450,
-      threatsDetected: 432,
+      totalScans: 156,
+      threatsDetected: 12,
       recentScans: { urls: [], passwords: [] },
       isMock: true
     });
