@@ -1,6 +1,4 @@
-<div align="Left">
-  <img src="client/public/Logo.png" alt="Nyxecure Logo" width="50"/><span>Nyxecure</span>
-</div>
+<img src="client/public/Logo.png" alt="Nyxecure Logo" width="25"/> Nyxecure
 
 # 🛡️ Nyxecure
 
